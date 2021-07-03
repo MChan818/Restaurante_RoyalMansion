@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<!-- LINKS A FUENTES -->
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Royal Mansion - Contacto</title>
+</head>
+<body class="body">
+	<header class="minifondo">
+		<nav class="menu">
+			<ul>
+				<li><a href="horarios.html">Horarios</a></li>
+				<li><a href="contacto.html">Contactanos</a></li>
+				<li><a href="menu.html">Menu</a>
+					<!-- MENU DESPLEGABLE -->
+					<ul>
+						<li><a href="menu.html">Carta</a></li>
+						<li><a href="menu.html">M.Ejecutivo</a></li>
+					</ul>
+					<!-- END OF MENU DESPLEGABLE -->
+				</li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+			<a href="index.html"><img id="top-logo"src="imagenes/minilogo.png" alt="Poner un logo"></a>
+	</header>
+
+	<div>
+		<h2 class="titulo" align="center">Contactanos</h2>
+
+		<form id="encuesta" action="form.php" method="POST" enctype="multipart/form-data" name="Lmao">
+			<div id="bottom-space">
+				<label class="fuente_global fuente_contactos" for="name">Nombre:</label>
+				<input class="boxcomment1" type="text" id="name">
+			</div>
+			<div id="bottom-space">
+				<label class="fuente_global fuente_contactos" for="mail">E-mail:</label>
+				<input class="boxcomment1" type="text" id="mail">
+			</div>
+  			<div id="bottom-space">
+  				<label class="fuente_global fuente_contactos" for="motivo">Motivo:</label>
+  				<select name="motivo" id="motivo">
+  					<option value="comercial">Comercial</option>
+  					<option value="eventos">Eventos</option>
+  					<option value="franquicias">Franquicias</option>
+  					<option value="consultas">Consultas</option>
+  					<option value="rrhh">RRHH</option>	
+  				</select>
+  			</div>
+  			<div id="bottom-space">
+				<textarea name="comment" id="boxcomment2" cols="30" rows="10">Escribe aquí...</textarea>
+			</div>
+			<div>
+				<input type="submit" value="Enviar">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

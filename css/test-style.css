@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*HOME BUTTON*/
+#top-logo {
+  	width: 5%;
+ 	position: absolute;
+  	top: 1%;
+  	left: 0.5%;
+}
+
+/*ACA EMPIEZA EL MENU*/
+
+/*Items del Menu*/
+.menu a:link {
+	color: ghostwhite;
+}
+.menu a:hover{
+	color: crimson;
+}
+
+.menu {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+}
+.menu ul {
+	list-style: none;
+	font-size: 0;
+}
+
+.menu li {
+   display: block;
+   position:relative;
+}
+/*Enlaces del menu*/
+.menu a {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 25px;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 2.5vh 10vh;
+	margin-left: 7.5%;
+	text-decoration: none;
+}
+
+/*MENU DESPLEGABLE*/
+.menu ul ul {
+	display: none;
+	position: absolute;
+	background-color: black;
+	margin-top: 0.7vh;
+}
+/*Items cuando pasas el mouse*/
+.menu ul li:hover > ul {
+	display: block;
+}
+
+/*Items del menu desplegable*/
+.menu ul ul li {
+	list-style: none;
+	float: none;
+}
+.menu ul ul a{
+	font-size: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+}
+
+.menu ul a:hover{
+	color: crimson;
+}
+
+.menu ul a:link a: visited{
+	color: ghostwhite;
+}
+/*FIN MENU DESPLEGABLE*/
+
+	/*ACA TERMINA EL MENU*/
+
+/*PIE DE PAGINA*/
+.contacto_container {
+	background-color: #F2F2F2;
+	background-size: cover;
+	height: 12.5vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vh;
+}
+
+.contacto-mail {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.img-mail {
+	height: 7.5vh;
+	width: 7.5vh;
+	margin-left:40%;
+	margin-top: 2.5vh;
+	float: left;
+}
+.contacto_mail_text{
+	margin-top:0.5vh;
+	white-space: pre;
+
+}
+.contacto-cel {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.img-cel {
+	height: 7.5vh;
+	width: 7.5vh;
+	margin-left:40%;
+	margin-top: 2.5vh;
+	float: left;
+}
+
+.contacto_cel_text{
+	margin-top:0.5vh;
+	white-space: pre;
+}
+
+.social_media{
+	margin-left:91.5%;
+}
+
+.img_media_size{
+	height: 50px;
+	width: 50px;
+}
+/*FIN DE PIE DE PAGINA*/

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- FUENTES -->
 	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -42,7 +43,9 @@
 	<section>
 		<div class="row">
 			<div class="column">
-					<img class="img-topbig img-effect" src="imagenes/dumplingc.png" alt="Food_Dumplings" >
+					<a href="#Modal1" data-toggle="modal">
+						<img class="img-topbig img-effect" src="imagenes/dumplingc.png" alt="Food_Dumplings" >
+					</a>
 					<img class="img-small img-effect" src="imagenes/pincakec.jpg" alt="Food_PinappleCake" > 
 			</div>
 			<div class="column">
@@ -92,5 +95,34 @@
 			<img src="imagenes/wpp.png" alt="Whatsapp" class="img_media_size">
 		</div>
 	</footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal1">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+        <div class="modal-body">
+          <!-- <img src="imagenes/dumpling.png" alt="Full_foto"> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

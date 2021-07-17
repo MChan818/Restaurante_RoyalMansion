@@ -1,15 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*FONDO PAGINA PRINCIPAL*/
-#fondo{
-	background: url(fondo1.jpg);
-  	height: 100vh; 
-  	background-size: cover;
-  }
-
 			/*ACA EMPIEZA EL MENU*/
 
 /*Items del Menu*/
@@ -76,7 +64,7 @@
 	color: crimson;
 }
 
-.menu ul a:link a: visited{
+.menu ul a:link a:visited{
 	color: ghostwhite;
 }
 /*FIN MENU DESPLEGABLE*/

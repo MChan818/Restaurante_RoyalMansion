@@ -1,0 +1,66 @@
+.my_menu{
+    a:link {
+        color: ghostwhite;
+    }
+    a:visited{
+        color: ghostwhite;
+    }
+    a:hover{
+        color: crimson;
+    }
+    li {
+        display: block;
+        position:relative;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        li {
+            background-color: black;
+            background-size: auto;
+            height: 4vh;
+            opacity: 0.7;
+            float: right;
+            list-style: none;
+        }
+
+        li:hover > ul {
+            display: block;
+        }
+
+        a {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+            margin: 10vh;
+        }
+
+        a:hover {
+            color: crimson;
+        }
+        a:link a:visited{
+            color: ghostwhite;
+        }
+        
+        ul {
+            display: none;
+            position: absolute;
+            background-color: black;
+
+            li {
+                list-style: none;
+                float: none;
+            }
+            a {
+                font-size: 20px;
+                font-family: 'Rajdhani', sans-serif;
+                text-align: center;
+            }
+        }
+    }
+
+}

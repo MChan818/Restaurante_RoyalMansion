@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- FUENTES -->
 	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -18,9 +18,9 @@
 	<title>Royal Mansion - Saboreando una cultura distinta</title>
 
 </head>
-<body class="body">
-	<header id="fondo"> 	
-		<nav class="menu">
+<body>
+	<header id="fondo">
+		<nav class="my_menu">
 			<ul>
 				<li><a href="horarios.html">Horarios</a></li>
 				<li><a href="contacto.html">Contactanos</a></li>
@@ -41,31 +41,33 @@
 	</header>
 
 	<section>
-		<div class="row">
-			<div class="column">
-					<a href="#Modal1" data-toggle="modal">
+		<div class="my_row">
+			<div class="my_column">
+					<button href="#Modal1" data-toggle="modal">
 						<img class="img-topbig img-effect" src="imagenes/dumplingc.png" alt="Food_Dumplings" >
-					</a>
+					</button>
+					<button href="#Modal2" data-toggle="modal">
 					<img class="img-small img-effect" src="imagenes/pincakec.jpg" alt="Food_PinappleCake" > 
+					</button>
 			</div>
-			<div class="column">
-				<img class="img-small img-effect" src="imagenes/2c.jpg" alt="Food_Steamed" >
-				<img class="img-bottombig img-effect" src="imagenes/3c.jpg" alt="Food_RiceSoyS" >
+			<div class="my_column">
+				<button href="#Modal3" data-toggle="modal"><img class="img-small img-effect" src="imagenes/2c.jpg" alt="Food_Steamed" ></button>
+				<button href="#Modal4" data-toggle="modal"> <img class="img-bottombig img-effect" src="imagenes/3c.jpg" alt="Food_RiceSoyS" ></button>
 			</div>
-			<div class="column">
+			<div class="my_column">
 				<img class="img-topbig img-effect" src="imagenes/1c.jpg" alt="Food_Chicken" >
 				<img class="img-small img-effect" src="imagenes/eggtartc.jpg" alt="Food_EggTart" >
 			</div>
-			<div class="column">
+			<div class="my_column">
 				<img class="img-small img-effect" src="imagenes/fdumplingc.jpg" alt="Food_FDumplings" >
 				<img class="img-bottombig img-effect" src="imagenes/shavedicec.png" alt="Food_ShavedIce" >
 			</div>
 		</div>
-		<div class="row">
-			<div class="column">
+		<div class="my_row">
+			<div class="my_column">
 				<img class="img-bottomlong img-effect" src="imagenes/mapotofuc.jpg" alt="Food_MapoTofu" >
 			</div>
-			<div class="column">
+			<div class="my_column">
 				<img class="img-bottomlong img-effect" src="imagenes/duck.jpg" alt="Food_Duck" >
 			</div>
 		</div>
@@ -96,28 +98,86 @@
 		</div>
 	</footer>
 
-  <!-- Modal -->
-  <div class="modal fade" id="Modal1">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-        <div class="modal-body">
-          <!-- <img src="imagenes/dumpling.png" alt="Full_foto"> -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+  	<!-- Modal -->
+  	<div class="modal fade" id="Modal1">
+    	<div class="modal-dialog">
+      		<!-- Modal content-->
+      		<div class="modal-content">
+            	<div class="close-modal" data-dismiss="modal">
+                	<div class="lr">
+                    	<div class="rl">
+                    	</div>
+                	</div>
+            	</div>
+        		<div class="modal-body">
+          		<!-- <img src="imagenes/dumpling.png" alt="Full_foto"> -->
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+    		</div>
+		</div>
+  	</div>
+
+	<div class="modal fade" id="Modal2">
+    	<div class="modal-dialog">
+      		<!-- Modal content-->
+      		<div class="modal-content">
+            	<div class="close-modal" data-dismiss="modal">
+                	<div class="lr">
+                    	<div class="rl">
+                    	</div>
+                	</div>
+            	</div>
+        		<div class="modal-body">
+          		<!-- <img src="imagenes/dumpling.png" alt="Full_foto"> -->
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+    		</div>
+		</div>
+  	</div>
+
+	<div class="modal fade" id="Modal3">
+    	<div class="modal-dialog">
+      		<!-- Modal content-->
+      		<div class="modal-content">
+            	<div class="close-modal" data-dismiss="modal">
+                	<div class="lr">
+                    	<div class="rl">
+                    	</div>
+                	</div>
+            	</div>
+        		<div class="modal-body">
+          		<!-- <img src="imagenes/dumpling.png" alt="Full_foto"> -->
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+    		</div>
+		</div>
+  	</div>
+
+	<div class="modal fade" id="Modal4">
+    	<div class="modal-dialog">
+      		<!-- Modal content-->
+      		<div class="modal-content">
+            	<div class="close-modal" data-dismiss="modal">
+                	<div class="lr">
+                    	<div class="rl">
+                    	</div>
+                	</div>
+            	</div>
+        		<div class="modal-body">
+          		<!-- <img src="imagenes/dumpling.png" alt="Full_foto"> -->
+        		</div>
+        		<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        		</div>
+    		</div>
+		</div>
+  	</div>
 
 
 	<script src="js/jquery.js"></script>

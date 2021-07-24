@@ -1,0 +1,65 @@
+%fuente {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.titulo{
+    font-size: 50px;
+    @extend %fuente;
+}
+
+.subtitulo{
+    font-size: 3vh;
+    @extend %fuente;
+}
+
+.fuente_global{
+	font-size: 20px;
+    @extend %fuente;
+}
+
+.my_modal-footer{
+    color: white;
+    @extend %fuente;
+}
+
+.my_modal-footer-txt{
+	color: white;
+	font-size: 15px;
+    @extend %fuente;
+}
+
+@mixin tamano($ancho, $alto){
+    width:$ancho;
+    height:$alto;
+}
+
+.img-bottombig {
+	max-width: 100%;
+    @include tamano(100%, 52vh);
+	/* margin-top: 1.15%; */
+}
+
+.img-topbig {
+	max-width: 100%;
+    @include tamano(100%, 52vh);
+	/* margin-top: 1.15%; */
+}
+
+.img-small {
+	max-width: 100%;
+    @include tamano(100%,20.8vh);
+	/* margin-top: 1.15%; */
+}
+.img-bottomlong {
+	max-width: 100%;
+    @include tamano(100%, 57.5vh);
+	/* margin-top: 0.75%; */
+}
+
+.google_map_size{
+    @include tamano(100%,50vh);
+}
+
+.img_media_size{
+    @include tamano(50px,50px);
+}

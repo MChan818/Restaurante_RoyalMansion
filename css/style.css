@@ -217,57 +217,59 @@
 /*ESTO ES PARA GRID.HTML*/
 .header { 
 	grid-area: header;
+	height: 75vh;
+	width: 100%;
+	background-color: crimson;
 }
 .img-menu {
 	grid-area: menu; 
 	height: 75vh;
-	width: 60%;
-	/*margin-left: 37.5%;*/
-	margin-left: 20%;
+	width: 100%;
+	background-color: darkgreen;
 }
 
-.menu-mod {
+.black-space { 
+	grid-area: border; 
+	height: 75vh;
 	width: 100%;
-	height: 100%;
+	background-color: black;
 }
-.text-menu { 
-	grid-area: msg; 
-	height: 12.5vh;
-	width: 100%;
-	margin-left: 15%;
-}
-.item4 { 
+.menu_img1 { 
 	grid-area: img-1; 
 	height: 25vh;
 	width: 100%;
-	margin-left: 15%;
+	background-color: darkmagenta;
 }
-.item5 { 
+.menu_img2 { 
 	grid-area: img-2;
 	height: 25vh;
 	width: 100%;
-	margin-left: 15%;
+	background-color: darkolivegreen;
+}
+
+.menu_img3 { 
+	grid-area: img-3;
+	height: 25vh;
+	width: 100%;
+	background-color: darkorange;
+}
+
+.menu_img4 { 
+	grid-area: img-4;
+	height: 25vh;
+	width: 100%;
+	background-color: darkturquoise;
 	}
 
-.img-item4{
-	height: 29vh;
-	margin-top: -2vh;
-	width:75vh;
-}
-
-.img-item5{
-	height: 29vh;
-	margin-top: -2vh;
-	width:75vh;
-}
 
 .grid-container{
 	display: grid;
 	grid-template-areas:
-	"header header"
-	"msg menu"
-	"img-1 menu"
-	"img-2 menu";
+	"header header header header header header header header"
+	"border menu menu menu img-1 img-1 img-1 img-1"
+	"img-2 img-2 img-2 img-2 menu menu menu border"
+	"border menu menu menu img-3 img-3 img-3 img-3"
+	"img-4 img-4 img-4 img-4 menu menu menu border";
 	grid-gap: 20px;
 	padding: 10px;
 }

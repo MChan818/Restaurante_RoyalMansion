@@ -145,6 +145,7 @@
 	height: 20vh;
 	border: 1;
 	font-family: Verdana, sans-serif;
+	resize: none;
 }
 
 #encuesta {

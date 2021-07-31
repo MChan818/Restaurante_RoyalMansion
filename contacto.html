@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/navmenu.css">
 	<link rel="stylesheet" href="css/tamano.css">
@@ -42,17 +43,25 @@
 		<h2 class="titulo" align="center">Contactanos</h2>
 
 		<form id="encuesta" action="form.php" method="POST" enctype="multipart/form-data" name="Lmao">
-			<div id="bottom-space">
+			<!-- <div id="bottom-space">
 				<label class="fuente_global fuente_contactos" for="name">Nombre:</label>
 				<input class="boxcomment1" type="text" id="name">
-			</div>
-			<div id="bottom-space">
+			</div> -->
+			<!-- <div id="bottom-space">
 				<label class="fuente_global fuente_contactos" for="mail">E-mail:</label>
 				<input class="boxcomment1" type="text" id="mail">
+			</div> -->
+			<div id="bottom-space" class="form-group">
+				<label for="email">Nombre:</label>
+				<input type="email" class="form-control boxcomment1" id="email" placeholder="Insertar Nombre">  
+			</div>
+			<div id="bottom-space" class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control boxcomment1" id="email" placeholder="Insertar Email">  
 			</div>
   			<div id="bottom-space">
-  				<label class="fuente_global fuente_contactos" for="motivo">Motivo:</label>
-  				<select name="motivo" id="motivo">
+  				<label for="motivo">Motivo:</label>
+  				<select name="motivo" id="motivo" class="form-control boxcomment1">
   					<option value="comercial">Comercial</option>
   					<option value="eventos">Eventos</option>
   					<option value="franquicias">Franquicias</option>
@@ -61,10 +70,10 @@
   				</select>
   			</div>
   			<div id="bottom-space">
-				<textarea name="comment" id="boxcomment2" cols="30" rows="10">Escribe aquí...</textarea>
+				<textarea name="comment" class="form-control" id="boxcomment2" cols="30" rows="10" placeholder="Escribe Aqui..."></textarea>
 			</div>
 			<div>
-				<input type="submit" value="Enviar">
+				<button type="submit" class="btn btn-default">Enviar</button>
 			</div>
 		</form>
 	</div>

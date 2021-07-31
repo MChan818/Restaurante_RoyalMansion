@@ -183,81 +183,36 @@
 	text-align: center;
 }
 
-
-/*ESTO PERTENECE A MENU.HTML*/
-.section_delivery{
-	height: 70vh;
-}
-.delivery{
-	width: 70vh;
-	height: 70vh;
-}
-
-.takeaway_img{
-	float: left;
-}
-
-.menu-text-center{
-	font-size: 20px;
-	white-space: pre;
-	margin-left: 1vh;
-	margin-top:-3vh;
-}
-
-#txt_container{
-	height: 70vh;
-	width: 50vh;
-	float: left;
-}
-
-#scan{
-	float: left;
-}
-
 /*ESTO ES PARA GRID.HTML*/
 .header { 
 	grid-area: header;
-	height: 75vh;
-	width: 100%;
 	background-color: crimson;
 }
-.img-menu {
+.section_menu {
 	grid-area: menu; 
-	height: 75vh;
-	width: 100%;
 	background-color: darkgreen;
 }
 
 .black-space { 
 	grid-area: border; 
-	height: 75vh;
-	width: 100%;
-	background-color: black;
+	background-color: gray;
 }
 .menu_img1 { 
-	grid-area: img-1; 
-	height: 25vh;
-	width: 100%;
+	grid-area: img-1;
 	background-color: darkmagenta;
 }
 .menu_img2 { 
 	grid-area: img-2;
-	height: 25vh;
-	width: 100%;
 	background-color: darkolivegreen;
 }
 
 .menu_img3 { 
 	grid-area: img-3;
-	height: 25vh;
-	width: 100%;
 	background-color: darkorange;
 }
 
 .menu_img4 { 
 	grid-area: img-4;
-	height: 25vh;
-	width: 100%;
 	background-color: darkturquoise;
 	}
 
@@ -266,12 +221,14 @@
 	display: grid;
 	grid-template-areas:
 	"header header header header header header header header"
-	"border menu menu menu img-1 img-1 img-1 img-1"
-	"img-2 img-2 img-2 img-2 menu menu menu border"
-	"border menu menu menu img-3 img-3 img-3 img-3"
-	"img-4 img-4 img-4 img-4 menu menu menu border";
+	"border section_menu section_menu section_menu img-1 img-1 img-1 img-1"
+	"img-2 img-2 img-2 img-2 section_menu section_menu section_menu border"
+	"border section_menu section_menu section_menu img-3 img-3 img-3 img-3"
+	"img-4 img-4 img-4 img-4 section_menu section_menu section_menu border";
 	grid-gap: 20px;
 	padding: 10px;
+	grid-template-rows: 100px 1fr 1fr 75px; 
+	grid-template-columns: 20% auto 15%;
 }
 
 .grid-container > div {

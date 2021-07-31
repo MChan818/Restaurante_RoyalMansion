@@ -56,6 +56,17 @@
 	/* margin-top: 0.75%; */
 }
 
+.img-menu-r{
+    max-width: 100%;
+    margin-right: -80vh;
+    @include tamano(100%,75vh)
+}
+
+.img-menu-l{
+    max-width: 100%;
+    @include tamano(100%,75vh)
+}
+
 .google_map_size{
     @include tamano(100%,50vh);
 }

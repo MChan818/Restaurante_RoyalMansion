@@ -184,57 +184,50 @@
 }
 
 /*ESTO ES PARA GRID.HTML*/
-.header { 
-	grid-area: header;
-	background-color: crimson;
-}
-.section_menu {
-	grid-area: menu; 
-	background-color: darkgreen;
-}
-
-.black-space { 
-	grid-area: border; 
-	background-color: gray;
-}
-.menu_img1 { 
-	grid-area: img-1;
-	background-color: darkmagenta;
-}
-.menu_img2 { 
-	grid-area: img-2;
-	background-color: darkolivegreen;
-}
-
-.menu_img3 { 
-	grid-area: img-3;
-	background-color: darkorange;
-}
-
-.menu_img4 { 
-	grid-area: img-4;
-	background-color: darkturquoise;
-	}
-
-
-.grid-container{
+#grid-container {
 	display: grid;
 	grid-template-areas:
-	"header header header header header header header header"
-	"border section_menu section_menu section_menu img-1 img-1 img-1 img-1"
-	"img-2 img-2 img-2 img-2 section_menu section_menu section_menu border"
-	"border section_menu section_menu section_menu img-3 img-3 img-3 img-3"
-	"img-4 img-4 img-4 img-4 section_menu section_menu section_menu border";
-	grid-gap: 20px;
-	padding: 10px;
-	grid-template-rows: 100px 1fr 1fr 75px; 
+	"header header header header header header"
+	"nav productos productos servicios servicios servicios"
+	"nav productos productos servicios servicios servicios"
+	"nav productos productos servicios servicios servicios";
+	/* grid-template-rows: 100px 1fr 1fr 75px; 
+	grid-template-columns: 20% auto 15%; */
+}
+#grid-container-inv {
+	display: grid;
+	grid-template-areas:
+	"header header header header header header"
+	"servicios servicios servicios productos productos nav"
+	"servicios servicios servicios productos productos nav"
+	"servicios servicios servicios productos productos nav";
+	/* grid-template-rows: 100px 1fr 1fr 75px;  */
 	grid-template-columns: 20% auto 15%;
 }
 
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+header {
+	grid-area: header;
+	background-color:black;
+	height:15vh;
+ }
+section#grid_menu {
+	grid-area: productos;
+ }
+section#grid_img {
+	grid-area: servicios;  
+}
+nav#black {
+	grid-area: nav;
+	background-color: black;
+	height: 75vh; /*Con solo cambiar el tamaño de 1, cambian todos. Chequear las imagenes en _tamano.scss*/
+}
+ /* YA HAY UNA CLASS NOMBRADA "BORDER" en BS parece */
+ .my_border{
+	border: none;
+}
+
+.menu-txt-r{
+	width: 100%;
 }
 
 /*ACA SE MODIFICA EL BOOTSTRAP DEL MODAL EN GALERIA*/

@@ -28,6 +28,7 @@
     @extend %fuente;
 }
 
+
 @mixin tamano($ancho, $alto){
     width:$ancho;
     height:$alto;
@@ -73,4 +74,14 @@
 
 .img_media_size{
     @include tamano(50px,50px);
+}
+
+@media screen and (max-width: 480px){
+    .fuente_global{
+        font-size: 2vh;
+    }
+
+    .img_media_size{
+        @include tamano(30px,30px);
+    }
 }

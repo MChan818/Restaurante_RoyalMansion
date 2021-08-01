@@ -8,8 +8,7 @@
 	background: url(imagenes_css/fondo1.jpg);
   	height: 100vh; 
   	background-size: cover;
-  }
-
+}
 /*Logo en el medio de la pagina ppal*/
 #center-logo {
 	width: 33%;
@@ -251,7 +250,7 @@ nav#black {
 }
 
 .close-position{
-	transform: translate(60vh, -3vh);
+	transform: translate(35vh , 1vh);
 }
 
 .close-modal:hover {
@@ -261,7 +260,7 @@ nav#black {
 .close-modal .lr {
     z-index: 1051;
     width: 1px;
-    height: 75px;
+    height: 50px;
     margin-left: 35px;
     background-color: rgb(255, 255, 255);
     -webkit-transform: rotate(45deg);
@@ -272,7 +271,7 @@ nav#black {
 .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
-    height: 75px;
+    height: 50px;
     background-color: /*#2c3e50*/rgb(255, 255, 255);
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -291,4 +290,41 @@ nav#black {
 .my_modal-img-plus{
 	height: 75vh;
 	width: 125vh;
+}
+
+
+/* AHORA VIENE EL RESPONSIVE */
+@media screen and (max-width: 480px) {
+	#fondo{
+		background: url(imagenes_css/fondo1c.jpg);
+	}
+	#center-logo{
+		height: 50vh;
+		width: 60%;
+		transform: translate(40% , 25%);
+	}
+	#top-logo{
+		width: 0%;
+	}
+	.my_row{
+		flex-direction: column;
+	}
+	.close-position{
+		transform: translate(-17.5vh ,95vh);
+	}
+	.social_media{
+		margin-left: 65%;
+	}
+	.img-cel{
+		height: 5vh;
+		width: 5vh;
+	}
+	.img-mail{
+		height: 5vh;
+		width: 5vh;
+	}
+	.fuente_contactos{
+		font-size: 5px;
+	}
+	
 }

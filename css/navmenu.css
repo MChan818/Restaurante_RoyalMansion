@@ -40,19 +40,5 @@
 .my_menu ul a:link a:visited {
   color: ghostwhite;
 }
-.my_menu ul ul {
-  display: none;
-  position: absolute;
-  background-color: black;
-}
-.my_menu ul ul li {
-  list-style: none;
-  float: none;
-}
-.my_menu ul ul a {
-  font-size: 20px;
-  font-family: "Rajdhani", sans-serif;
-  text-align: center;
-}
 
 /*# sourceMappingURL=navmenu.css.map */

@@ -74,4 +74,15 @@
   height: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .fuente_global {
+    font-size: 2vh;
+  }
+
+  .img_media_size {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /*# sourceMappingURL=tamano.css.map */

@@ -9,6 +9,10 @@
   	height: 100vh; 
   	background-size: cover;
 }
+#h1-transparent{
+    margin: 0;
+    padding: 0;
+}
 /*Logo en el medio de la pagina ppal*/
 #center-logo {
 	width: 33%;
@@ -187,39 +191,30 @@
 #grid-container {
 	display: grid;
 	grid-template-areas:
-	"header header header header header header"
-	"nav productos productos servicios servicios servicios"
-	"nav productos productos servicios servicios servicios"
-	"nav productos productos servicios servicios servicios";
-	/* grid-template-rows: 100px 1fr 1fr 75px; 
-	grid-template-columns: 20% auto 15%; */
+	"blank productos productos servicios servicios servicios"
+	"blank productos productos servicios servicios servicios"
+	"blank productos productos servicios servicios servicios";
+	background-color: black;
+	height: 100vh;
 }
 #grid-container-inv {
 	display: grid;
 	grid-template-areas:
-	"header header header header header header"
-	"servicios servicios servicios productos productos nav"
-	"servicios servicios servicios productos productos nav"
-	"servicios servicios servicios productos productos nav";
+	"servicios servicios servicios productos productos blank"
+	"servicios servicios servicios productos productos blank"
+	"servicios servicios servicios productos productos blank";
 	/* grid-template-rows: 100px 1fr 1fr 75px;  */
 	grid-template-columns: 20% auto 15%;
+	background-color: black;
 }
 
-header {
-	grid-area: header;
-	background-color:black;
-	height:15vh;
- }
 section#grid_menu {
 	grid-area: productos;
+	height: 75vh;
+	margin-top: 25vh;
  }
 section#grid_img {
 	grid-area: servicios;  
-}
-nav#black {
-	grid-area: nav;
-	background-color: black;
-	height: 75vh; /*Con solo cambiar el tamaño de 1, cambian todos. Chequear las imagenes en _tamano.scss*/
 }
  /* YA HAY UNA CLASS NOMBRADA "BORDER" en BS parece */
  .my_border{

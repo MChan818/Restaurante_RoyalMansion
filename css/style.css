@@ -259,7 +259,7 @@ section#grid_menu {
 	grid-area: productos;
 	height: 75vh;
 	margin-top: 15vh;
- }
+}
 section#grid_img {
 	grid-area: servicios;  
 }
@@ -337,14 +337,15 @@ section#grid_img {
 
 
 /* AHORA VIENE EL RESPONSIVE */
+/* iPhone 6/7/8 */
 @media screen and (max-width: 480px) {
 	#fondo{
 		background: url(imagenes_css/fondo1c.jpg);
 	}
 	#center-logo{
 		height: 50vh;
-		width: 60%;
-		transform: translate(40% , 25%);
+		width: 75%;
+		transform: translate(17.5% , 0%);
 	}
 	#top-logo{
 		width: 0%;
@@ -353,7 +354,7 @@ section#grid_img {
 		flex-direction: column;
 	}
 	.close-position{
-		transform: translate(-17.5vh ,95vh);
+		transform: translate(-17.5vh ,80vh);
 	}
 	.social_media{
 		margin-left: 65%;
@@ -369,5 +370,64 @@ section#grid_img {
 	.fuente_contactos{
 		font-size: 5px;
 	}
+	.img-mail {
+		height: 5vh;
+		width: 5vh;
+		margin-left:10%;
+		margin-top: 2.5vh;
+		float: left;
+	}
 	
+	.img-cel {
+		height: 5vh;
+		width: 5vh;
+		margin-left:10%;
+		margin-top: 2.5vh;
+		float: left;
+	}
+
+	.my_modal-img{
+		height: 50vh;
+		width: 75vh;
+	}
+	
+	.my_modal-img-plus{
+		height: 50vh;
+		width: 75vh;
+	}
+	.minifondo {
+		background-color: black;
+		height: 25vh; 
+		background-size: cover;
+	}
+	#encuesta {
+		left: 50%;
+		right: 50%;
+		transform: translate(5%,10%);
+	}
+	#form-container {
+		height: 90vh;
+		width: 100%;
+	}
+	#grid-container {
+		display: grid;
+		grid-template-areas:
+		"productos productos productos productos productos productos"
+		"productos productos productos productos productos productos"
+		"productos productos productos productos productos productos";
+		height: 100vh;
+	}
+	#grid-container-inv {
+		display: grid;
+		grid-template-areas:
+		"productos productos productos productos productos productos"
+		"productos productos productos productos productos productos"
+		"productos productos productos productos productos productos";
+		height: 100vh;
+	}
+	section#grid_menu {
+		grid-area: productos;
+		height: 85vh;
+		width: 56vh;
+	}
 }

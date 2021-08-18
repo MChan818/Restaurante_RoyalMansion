@@ -106,12 +106,49 @@
     @include tamano(50px,50px);
 }
 
+// PARA IPHONE6/7/8
 @media screen and (max-width: 480px){
     .fuente_global{
         font-size: 2vh;
     }
 
     .img_media_size{
-        @include tamano(30px,30px);
+        @include tamano(4vh,4vh);
+    }
+    .my_modal-footer-txt{
+        color: white;
+        font-size: 15px;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        @extend %fuente;
+    }
+    .n-titulo{
+        font-size: 5vh;
+        color: white;
+        line-height:15vh;
+        @extend %raleway;
+    }
+    
+    .n-fuente{
+        font-size: 2vh;
+        color: gray;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 0vh;
+        text-align: justify;
+        @extend %raleway;
+    }
+    .img-menu-r{
+        max-width: 0%;
+        margin-right:0vh;
+        margin-top: 0vh;
+        @include tamano(0vh,0vh)
+    }
+    
+    .img-menu-l{
+        max-width: 0%;
+        margin-right:0vh;
+        margin-top: 0vh;
+        @include tamano(0vh,0vh)
     }
 }

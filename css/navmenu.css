@@ -41,4 +41,21 @@
   color: ghostwhite;
 }
 
+@media screen and (max-width: 480px) {
+  .my_menu {
+    margin-bottom: 10vh;
+    margin-top: 0;
+  }
+  .my_menu ul li {
+    background-color: black;
+    background-size: auto;
+    height: 5vh;
+    width: 100%;
+    opacity: 0.8;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=navmenu.css.map */

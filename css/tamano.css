@@ -7,11 +7,11 @@
 }
 
 .titulo {
-  font-size: 50px;
+  font-size: 5vh;
 }
 
 .titulo-menu {
-  font-size: 50px;
+  font-size: 5vh;
   line-height: 50vh;
   color: white;
 }
@@ -36,7 +36,7 @@
 }
 
 .fuente_global {
-  font-size: 20px;
+  font-size: 2vh;
 }
 
 .my_modal-footer {

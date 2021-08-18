@@ -7,11 +7,11 @@
 }
 
 .titulo{
-    font-size: 50px;
+    font-size: 5vh;
     @extend %fuente;
 }
 .titulo-menu{
-    font-size: 50px;
+    font-size: 5vh;
 	line-height: 50vh;
 	color: white;
     @extend %raleway;
@@ -40,7 +40,7 @@
 }
 
 .fuente_global{
-	font-size: 20px;
+	font-size: 2vh;
     @extend %fuente;
 }
 

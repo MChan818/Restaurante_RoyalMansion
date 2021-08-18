@@ -13,6 +13,11 @@
     margin: 0;
     padding: 0;
 }
+
+.index-menu-right{
+	float: right;
+
+}
 /*Logo en el medio de la pagina ppal*/
 #center-logo {
 	width: 33%;
@@ -125,14 +130,15 @@
 
 /*FONDO PARA SUBPAGINAS*/
 .minifondo {
-	background: url(imagenes_css/subfondo1c.jpg);
-  	height: 20vh; 
+	background-color: black;
+  	height: 4vh; 
   	background-size: cover;
 }
 
 /*ESTO PERTENECE A CONTACTOS.HTML*/
-#bottom-space {
-	margin-bottom: 1vh;
+#form-container {
+	height: 75vh;
+	width: 100%;
 }
 .fuente_contactos{
 	font-size: 15px;
@@ -161,6 +167,38 @@
 	right: 50%;
 	transform: translate(33%,10%);
 }
+
+/*ESTO PERTENECE A MENU.HTML */
+
+#fondo5-container{
+	background: url(imagenes_css/fondo5.jpg);
+	height: 50vh; 
+	background-size: cover;
+}
+
+/* ESTO PERTENECE A NOSOTROS.HTML */
+#fondo4-container{
+	background: url(imagenes_css/fondo7c.jpg);
+	height: 50vh; 
+	width: 100%;
+	background-size: cover;
+}
+
+.n-txt-container{
+	height: 75vh;
+	background-color: black;
+}
+
+.n-img-container{
+	height: 75vh;
+	width: 100%;
+}
+
+.n-img{
+	height: 75vh;
+	width: 100%;
+}
+
 
 /*ESTO PERTENECE A HORARIOS.HTML*/
 .center{
@@ -192,7 +230,14 @@
 	text-align: center;
 }
 
-/*ESTO ES PARA GRID.HTML*/
+/*ESTO ES PARA MENU.HTML*/
+
+#fondo2-container{
+	background: url(imagenes_css/fondo2c.jpg);
+	height: 50vh; 
+	background-size: cover;
+}
+
 #grid-container {
 	display: grid;
 	grid-template-areas:
@@ -200,7 +245,7 @@
 	"blank productos productos servicios servicios servicios"
 	"blank productos productos servicios servicios servicios";
 	background-color: black;
-	height: 100vh;
+	height: 90vh;
 }
 #grid-container-inv {
 	display: grid;
@@ -216,13 +261,13 @@
 section#grid_menu {
 	grid-area: productos;
 	height: 75vh;
-	margin-top: 25vh;
+	margin-top: 15vh;
  }
 section#grid_img {
 	grid-area: servicios;  
 }
  /* YA HAY UNA CLASS NOMBRADA "BORDER" en BS parece */
- .my_border{
+.my_border{
 	border: none;
 }
 
@@ -291,6 +336,7 @@ section#grid_img {
 	height: 75vh;
 	width: 125vh;
 }
+
 
 
 /* AHORA VIENE EL RESPONSIVE */

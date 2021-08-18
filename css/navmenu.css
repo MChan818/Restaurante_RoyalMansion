@@ -22,7 +22,7 @@
   background-size: auto;
   height: 4vh;
   opacity: 0.7;
-  float: right;
+  display: inline-block;
   list-style: none;
 }
 .my_menu ul li:hover > ul {

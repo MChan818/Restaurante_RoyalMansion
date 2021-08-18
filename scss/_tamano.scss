@@ -2,9 +2,36 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
+%raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
 .titulo{
     font-size: 50px;
     @extend %fuente;
+}
+.titulo-menu{
+    font-size: 50px;
+	line-height: 50vh;
+	color: white;
+    @extend %raleway;
+}
+
+.n-titulo{
+    font-size: 5vh;
+	color: white;
+    line-height:40vh;
+    @extend %raleway;
+}
+
+.n-fuente{
+    font-size: 2vh;
+    color: gray;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: -15vh;
+    text-align: justify;
+    @extend %raleway;
 }
 
 .subtitulo{
@@ -60,14 +87,14 @@
 .img-menu-r{
     max-width: 100%;
     margin-right:-80vh;
-    margin-top: 25vh;
+    margin-top: 15vh;
     @include tamano(110vh,75vh)
 }
 
 .img-menu-l{
     max-width: 100%;
     margin-right:-20vh;
-    margin-top: 25vh;
+    margin-top: 15vh;
     @include tamano(110vh,75vh)
 }
 

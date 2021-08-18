@@ -7,27 +7,32 @@
 	<link rel="stylesheet" href="css/tamano.css">
 	<!-- LINKS A FUENTES -->
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<!-- END OF FUENTES -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="RESTAURANTE, CHINO, ASIA, COMIDA, BARRIO CHINO">
+	<meta name="keywords" content="restaurante, china, asia, comida, barrio chino">
 	<title>Royal Mansion - Contacto</title>
 </head>
 <body class="body">
 	<header class="minifondo">
-		<nav class="my_menu">
+		<nav class="my_menu center">
 			<ul>
-				<li><a href="horarios.html">Horarios</a></li>
-				<li><a href="contacto.html">Contactanos</a></li>
-				<li><a href="menu.html">Menu</a></li>
 				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Contactanos</a></li>
+				<li><a href="horarios.html">Horarios</a></li>
 			</ul>
 		</nav>
-			<a href="index.html"><img id="top-logo"src="imagenes/minilogo.png" alt="Poner un logo"></a>
 	</header>
-
-	<div>
-		<h2 class="titulo" align="center">Contactanos</h2>
+	<div id="fondo5-container">
+		<h2 class="titulo center titulo-menu">
+			Contactanos
+		</h2>
+	</div>
+	<div id="form-container">
+		<h2 class="titulo" align="center">Ingrese sus Datos</h2>
 		<form id="encuesta" action="form.php" method="POST" enctype="multipart/form-data" name="contactanos">
 			<div class="form-group">
 				<label for="email">Nombre:</label>
@@ -55,6 +60,33 @@
 			</div>
 		</form>
 	</div>
+
+	<footer>
+		<section class="contacto_container">
+			<div class="contacto-mail">
+				<img src="imagenes/mail.png" alt="Imagen de Mail" class="img-mail">
+				<p class="fuente_global contacto_mail_text">
+	E-mail
+	webmaximilianochan@gmail.com
+				</p>
+			</div>
+
+			<div class="contacto-cel">
+				<img src="imagenes/cel.png" alt="Imagen de Telefono" class="img-cel">		
+				<p class="fuente_global contacto_cel_text">
+	Llamanos
+	11-4401-2924
+				</p>
+			</div>
+		<br>
+		</section>
+
+		<div class="social_media">
+			<img src="imagenes/facebook.png" alt="Facebook" class="img_media_size">
+			<img src="imagenes/insta.png" alt="Instagram" class="img_media_size">
+			<img src="imagenes/wpp.png" alt="Whatsapp" class="img_media_size">
+		</div>
+	</footer>
 
 </body>
 </html>

@@ -96,7 +96,6 @@
 .contacto_mail_text{
 	margin-top:0.5vh;
 	white-space: pre;
-
 }
 .contacto-cel {
 	width: 50%;
@@ -137,12 +136,12 @@
 	width: 100%;
 }
 .fuente_contactos{
-	font-size: 15px;
+	font-size: 2vh;
 }
 
 .boxcomment1 {
-	width: 300px;
-	border-radius: 10px;
+	width: 30vh;
+	border-radius: 0.5vh;
 }
 
 #boxcomment2 {
@@ -152,6 +151,11 @@
 	margin-top: 2.5vh;
 	font-family: Verdana, sans-serif;
 	resize: none;
+}
+
+.boxcomment3 {
+	width: 30vh;
+	border-radius: 0.5vh;
 }
 
 .btn-top-space{
@@ -194,7 +198,6 @@
 	height: 75vh;
 	width: 100%;
 }
-
 
 /*ESTO PERTENECE A HORARIOS.HTML*/
 .center{
@@ -337,7 +340,9 @@ section#grid_img {
 
 /* AHORA VIENE EL RESPONSIVE */
 /* iPhone 6/7/8 */
-@media screen and (max-width: 480px) {
+@media screen 
+and (min-width: 300px)
+and (max-width: 400px){
 	#fondo{
 		background: url(imagenes_css/fondo1c.jpg);
 	}
@@ -355,9 +360,6 @@ section#grid_img {
 	.close-position{
 		transform: translate(-17.5vh ,80vh);
 	}
-	.social_media{
-		margin-left: 65%;
-	}
 	.img-cel{
 		height: 5vh;
 		width: 5vh;
@@ -365,9 +367,6 @@ section#grid_img {
 	.img-mail{
 		height: 5vh;
 		width: 5vh;
-	}
-	.fuente_contactos{
-		font-size: 5px;
 	}
 	.img-mail {
 		height: 5vh;
@@ -396,7 +395,7 @@ section#grid_img {
 	}
 	.minifondo {
 		background-color: black;
-		height: 25vh; 
+		height: 25vh;
 		background-size: cover;
 	}
 	#encuesta {
@@ -414,7 +413,7 @@ section#grid_img {
 		"productos productos productos productos productos productos"
 		"productos productos productos productos productos productos"
 		"productos productos productos productos productos productos";
-		height: 100vh;
+		height: 80vh;
 	}
 	#grid-container-inv {
 		display: grid;
@@ -422,23 +421,52 @@ section#grid_img {
 		"productos productos productos productos productos productos"
 		"productos productos productos productos productos productos"
 		"productos productos productos productos productos productos";
-		height: 100vh;
+		width: 100%;
+		height: 80vh;
 	}
 	section#grid_menu {
 		grid-area: productos;
-		height: 85vh;
-		width: 56vh;
+		height: 80vh;
+		width: 100%;
+		margin-top: 0;
 	}
-}
+	section#grid_img{
+		grid-area: unset;
+	}
+	/* CONTACTOS */
+	.fuente_contactos{
+		font-size: 2vh;
+	}
+	
+	.boxcomment1 {
+		width: 30vh;
+		border-radius: 0.5vh;
+	}
+	#boxcomment2 {
+		width: 50vh;
+		height: 20vh;
+		border: 1;
+		margin-top: 2.5vh;
+		font-family: Verdana, sans-serif;
+		resize: none;
+	}
+} 
 
-@media screen and (max-width: 1024px){
+@media screen 
+and (min-width: 1024px) 
+and (max-width: 1200px){
 	#fondo{
 		background: url(imagenes_css/fondo1.jpg);
+		height: 100vh; 
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: -50vh;
+
 	}
 	#center-logo{
 		height: 55vh;
 		width: 66%;
-		transform: translate(25% , 20%);
+		transform: translate(25% , 15%);
 	}
 	#top-logo{
 		width: 0%;
@@ -451,22 +479,17 @@ section#grid_img {
 	.my_row{
 		flex-direction: column;
 	}
+	.close-modal .lr {
+		height: 7.5vh;
+	}	
+	.close-modal .lr .rl {
+		height: 7.5vh;
+	}
 	.close-position{
-		transform: translate(-17.5vh ,80vh);
-	}
-	.social_media{
-		margin-left: 65%;
-	}
-	.img-cel{
-		height: 5vh;
-		width: 5vh;
-	}
-	.img-mail{
-		height: 5vh;
-		width: 5vh;
+		transform: translate(-24vh ,80vh);
 	}
 	.fuente_contactos{
-		font-size: 5px;
+		font-size: 5vh;
 	}
 	.img-mail {
 		height: 5vh;
@@ -479,9 +502,20 @@ section#grid_img {
 	.img-cel {
 		height: 5vh;
 		width: 5vh;
-		margin-left:10%;
+		margin-left:20%;
 		margin-top: 2.5vh;
 		float: left;
+	}
+	.contacto_mail_text{
+		margin-top:0vh;
+		white-space: pre;
+		font-size: 1.9vh;
+	}
+
+	.contacto_cel_text{
+		margin-top:0vh;
+		white-space: pre;
+		font-size: 1.9vh;
 	}
 
 	.my_modal-img{
@@ -495,37 +529,104 @@ section#grid_img {
 	}
 	.minifondo {
 		background-color: black;
-		height: 25vh; 
+		height: 30vh; 
 		background-size: cover;
 	}
+
 	#encuesta {
 		left: 50%;
 		right: 50%;
 		transform: translate(5%,10%);
 	}
+
 	#form-container {
 		height: 90vh;
 		width: 100%;
 	}
+
 	#grid-container {
 		display: grid;
 		grid-template-areas:
 		"productos productos productos productos productos productos"
-		"productos productos productos productos productos productos"
-		"productos productos productos productos productos productos";
-		height: 100vh;
+		"servicios servicios servicios servicios servicios servicios";
+		background-color: black;
+		height: 150vh;
 	}
+
 	#grid-container-inv {
 		display: grid;
 		grid-template-areas:
 		"productos productos productos productos productos productos"
-		"productos productos productos productos productos productos"
-		"productos productos productos productos productos productos";
-		height: 100vh;
+		"servicios servicios servicios servicios servicios servicios";
+		background-color: black;
 	}
+
 	section#grid_menu {
 		grid-area: productos;
-		height: 85vh;
-		width: 56vh;
+		height: 75vh;
+		/* width: 75vh; */
+		width: 100%;
+		margin-top: 0vh;
 	}
+	/* CONTACTOS */
+	#form-container {
+		height: 70vh;
+	}
+	.fuente_contactos{
+		font-size: 2vh;
+	}
+	.boxcomment1 {
+		border-radius: 0.5vh;
+		height: 4vh;
+		width: 40vh;
+	}
+
+	#boxcomment2 {
+		width: 50vh;
+		height: 20vh;
+		border: 1;
+		margin-top: 2.5vh;
+		font-family: Verdana, sans-serif;
+		font-size: 2vh;
+		resize: none;
+	}
+	.boxcomment3{
+		padding: 0 2vh;
+		width: 40vh;
+		font-size: 2vh;
+	}
+
+	.btn-default{
+		height: 5vh;
+		width: 10vh;
+		font-size: 2vh;
+	}
+
+	.btn-top-space{
+		margin-top: 2.5vh;
+	}
+	
+	#encuesta {
+		left: 50%;
+		right: 50%;
+		transform: translate(15%,15%);
+	}
+}
+@media screen 
+and (min-width: 1201px) 
+and (max-width: 1300px){
+	.minifondo {
+		background-color: black;
+  		height: 16vh; 
+  		background-size: cover;
+	}
+	#center-logo{
+		height: 50vh;
+		width: 30%;
+		transform: translate(115% , 0%);
+	}
+	#top-logo{
+		width: 0%;
+	}
+
 }

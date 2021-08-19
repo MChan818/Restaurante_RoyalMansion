@@ -16,6 +16,11 @@
 	color: white;
     @extend %raleway;
 }
+.subtitulo-menu{
+    font-size: 3vh;
+    font-weight: bolder;
+    @extend %raleway;
+}
 
 .n-titulo{
     font-size: 5vh;
@@ -107,7 +112,8 @@
 }
 
 // PARA IPHONE6/7/8
-@media screen and (max-width: 480px){
+@media screen and (min-width: 300px)
+and (max-width: 400px){
     .fuente_global{
         font-size: 2vh;
     }
@@ -139,16 +145,83 @@
         @extend %raleway;
     }
     .img-menu-r{
-        max-width: 0%;
+        max-width: 100%;
         margin-right:0vh;
         margin-top: 0vh;
-        @include tamano(0vh,0vh)
+        @include tamano(100vh,0vh)
     }
     
     .img-menu-l{
-        max-width: 0%;
+        max-width: 100%;
         margin-right:0vh;
         margin-top: 0vh;
-        @include tamano(0vh,0vh)
+        @include tamano(100vh,0vh)
+    }
+}
+// PARA IPAD PRO (1024px;1366px)
+@media screen 
+and (min-width: 1024px) 
+and (max-width: 1200px){
+    .fuente_global{
+        font-size: 2.5vh;
+    }
+
+    .img_media_size{
+        @include tamano(4vh,4vh);
+    }
+    .my_modal-footer-txt{
+        color: white;
+        font-size: 2.5vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+    .my_modal-footer{
+        color: white;
+        font-size: 4vh;
+    }
+    .n-titulo{
+        font-size: 5vh;
+        color: white;
+        line-height:15vh;
+    }
+    
+    .n-fuente{
+        font-size: 2vh;
+        color: gray;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 0vh;
+        text-align: justify;
+    }
+    .img-menu-r{
+        max-width: 100%;
+        margin-right:0vh;
+        margin-top: 0vh;
+        @include tamano(100vh,75vh)
+    }
+    
+    .img-menu-l{
+        max-width: 100%;
+        margin-right:0vh;
+        margin-top: 0vh;
+        @include tamano(100vh,75vh)
+    }
+}
+@media screen 
+and (min-width: 1201px) 
+and (max-width: 1300px){
+
+    .img-menu-r{
+        max-width: 100%;
+        margin-right:0vh;
+        margin-top: 0vh;
+        @include tamano(100vh,75vh)
+    }
+    
+    .img-menu-l{
+        max-width: 100%;
+        margin-right:0vh;
+        margin-top: 0vh;
+        @include tamano(100vh,75vh)
     }
 }

@@ -2,7 +2,7 @@
   font-family: "Rajdhani", sans-serif;
 }
 
-.n-fuente, .n-titulo, .titulo-menu {
+.n-fuente, .n-titulo, .subtitulo-menu, .titulo-menu {
   font-family: "Raleway", sans-serif;
 }
 
@@ -14,6 +14,11 @@
   font-size: 5vh;
   line-height: 50vh;
   color: white;
+}
+
+.subtitulo-menu {
+  font-size: 3vh;
+  font-weight: bolder;
 }
 
 .n-titulo {
@@ -102,7 +107,7 @@
   height: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 300px) and (max-width: 400px) {
   .fuente_global {
     font-size: 2vh;
   }
@@ -135,19 +140,89 @@
   }
 
   .img-menu-r {
-    max-width: 0%;
+    max-width: 100%;
     margin-right: 0vh;
     margin-top: 0vh;
-    width: 0vh;
+    width: 100vh;
     height: 0vh;
   }
 
   .img-menu-l {
-    max-width: 0%;
+    max-width: 100%;
     margin-right: 0vh;
     margin-top: 0vh;
-    width: 0vh;
+    width: 100vh;
     height: 0vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .fuente_global {
+    font-size: 2.5vh;
+  }
+
+  .img_media_size {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .my_modal-footer-txt {
+    color: white;
+    font-size: 2.5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+
+  .my_modal-footer {
+    color: white;
+    font-size: 4vh;
+  }
+
+  .n-titulo {
+    font-size: 5vh;
+    color: white;
+    line-height: 15vh;
+  }
+
+  .n-fuente {
+    font-size: 2vh;
+    color: gray;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 0vh;
+    text-align: justify;
+  }
+
+  .img-menu-r {
+    max-width: 100%;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    width: 100vh;
+    height: 75vh;
+  }
+
+  .img-menu-l {
+    max-width: 100%;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    width: 100vh;
+    height: 75vh;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .img-menu-r {
+    max-width: 100%;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    width: 100vh;
+    height: 75vh;
+  }
+
+  .img-menu-l {
+    max-width: 100%;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    width: 100vh;
+    height: 75vh;
   }
 }
 

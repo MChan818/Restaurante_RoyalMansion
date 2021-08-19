@@ -258,12 +258,12 @@
 	background-color: black;
 }
 
-section#grid_menu {
+#grid_menu {
 	grid-area: productos;
 	height: 75vh;
 	margin-top: 15vh;
 }
-section#grid_img {
+#grid_img {
 	grid-area: servicios;  
 }
  /* YA HAY UNA CLASS NOMBRADA "BORDER" en BS parece */
@@ -425,13 +425,13 @@ and (max-width: 400px){
 		width: 100%;
 		height: 80vh;
 	}
-	section#grid_menu {
+	#grid_menu {
 		grid-area: productos;
 		height: 80vh;
 		width: 100%;
 		margin-top: 0;
 	}
-	section#grid_img{
+	#grid_img{
 		grid-area: unset;
 	}
 	/* CONTACTOS */
@@ -458,7 +458,6 @@ and (min-width: 1024px)
 and (max-width: 1200px){
 	/* INDEX */
 	#fondo{
-		background: url(imagenes_css/fondo1.jpg);
 		height: 100vh; 
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -551,7 +550,7 @@ and (max-width: 1200px){
 		background-color: black;
 	}
 
-	section#grid_menu {
+	#grid_menu {
 		grid-area: productos;
 		height: 75vh;
 		/* width: 75vh; */

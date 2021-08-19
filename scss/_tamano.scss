@@ -163,7 +163,12 @@ and (max-width: 400px){
 and (min-width: 1024px) 
 and (max-width: 1200px){
     .fuente_global{
+        font-size: 2vh;
+    }
+    .subtitulo-menu{
         font-size: 2.5vh;
+        font-weight: bolder;
+        @extend %raleway;
     }
 
     .img_media_size{
@@ -197,14 +202,14 @@ and (max-width: 1200px){
         max-width: 100%;
         margin-right:0vh;
         margin-top: 0vh;
-        @include tamano(100vh,75vh)
+        @include tamano(100%,75vh)
     }
     
     .img-menu-l{
         max-width: 100%;
         margin-right:0vh;
         margin-top: 0vh;
-        @include tamano(100vh,75vh)
+        @include tamano(100%,75vh)
     }
 }
 @media screen 
@@ -214,14 +219,14 @@ and (max-width: 1300px){
     .img-menu-r{
         max-width: 100%;
         margin-right:0vh;
-        margin-top: 0vh;
+        margin-top: 15vh;
         @include tamano(100vh,75vh)
     }
     
     .img-menu-l{
         max-width: 100%;
         margin-right:0vh;
-        margin-top: 0vh;
+        margin-top: 15vh;
         @include tamano(100vh,75vh)
     }
 }

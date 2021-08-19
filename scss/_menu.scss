@@ -12,14 +12,16 @@
         display: block;
         position:relative;
     }
+
     ul {
         list-style: none;
+        font-size: 0;
         margin-bottom: 0;
         margin-top: 0;
 
         li {
             background-color: black;
-            background-size: cover;
+            background-size: auto;
             height: 4vh;
             opacity: 0.7;
             display: inline-block;
@@ -72,7 +74,7 @@ and (max-width: 1200px){
       background-color: black;
       background-size: auto;
       height: 6vh;
-      width: 100%;
+      width: 50%;
       line-height: 5vh;
       opacity: 0.8;
       display: inline-block;

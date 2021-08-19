@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+	
 }
 
 /*FONDO PAGINA PRINCIPAL*/
@@ -165,7 +166,8 @@
 #encuesta {
 	left: 50%;
 	right: 50%;
-	transform: translate(33%,10%);
+	margin-left: 33%;
+	margin-top:2%;
 }
 
 /*ESTO PERTENECE A MENU.HTML */
@@ -401,7 +403,7 @@ and (max-width: 400px){
 	#encuesta {
 		left: 50%;
 		right: 50%;
-		transform: translate(5%,10%);
+		margin-left: 5%;
 	}
 	#form-container {
 		height: 90vh;
@@ -455,6 +457,7 @@ and (max-width: 400px){
 @media screen 
 and (min-width: 1024px) 
 and (max-width: 1200px){
+	/* INDEX */
 	#fondo{
 		background: url(imagenes_css/fondo1.jpg);
 		height: 100vh; 
@@ -488,9 +491,16 @@ and (max-width: 1200px){
 	.close-position{
 		transform: translate(-24vh ,80vh);
 	}
-	.fuente_contactos{
-		font-size: 5vh;
+	.my_modal-img{
+		height: 50vh;
+		width: 75vh;
 	}
+	
+	.my_modal-img-plus{
+		height: 50vh;
+		width: 75vh;
+	}
+	/* FOOTER */
 	.img-mail {
 		height: 5vh;
 		width: 5vh;
@@ -518,32 +528,13 @@ and (max-width: 1200px){
 		font-size: 1.9vh;
 	}
 
-	.my_modal-img{
-		height: 50vh;
-		width: 75vh;
-	}
-	
-	.my_modal-img-plus{
-		height: 50vh;
-		width: 75vh;
-	}
+	/* BARRA DE NAVEGACION */
 	.minifondo {
 		background-color: black;
-		height: 30vh; 
+		height: 18vh; 
 		background-size: cover;
 	}
-
-	#encuesta {
-		left: 50%;
-		right: 50%;
-		transform: translate(5%,10%);
-	}
-
-	#form-container {
-		height: 90vh;
-		width: 100%;
-	}
-
+	/* MENU */
 	#grid-container {
 		display: grid;
 		grid-template-areas:
@@ -569,8 +560,12 @@ and (max-width: 1200px){
 		margin-top: 0vh;
 	}
 	/* CONTACTOS */
+	.fuente_contactos{
+		font-size: 5vh;
+	}
 	#form-container {
 		height: 70vh;
+		width: 100%;
 	}
 	.fuente_contactos{
 		font-size: 2vh;
@@ -580,7 +575,6 @@ and (max-width: 1200px){
 		height: 4vh;
 		width: 40vh;
 	}
-
 	#boxcomment2 {
 		width: 50vh;
 		height: 20vh;
@@ -609,7 +603,7 @@ and (max-width: 1200px){
 	#encuesta {
 		left: 50%;
 		right: 50%;
-		transform: translate(15%,15%);
+		margin-left: 20%;
 	}
 }
 @media screen 

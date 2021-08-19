@@ -254,7 +254,6 @@
 	"servicios servicios servicios productos productos blank"
 	"servicios servicios servicios productos productos blank"
 	"servicios servicios servicios productos productos blank";
-	/* grid-template-rows: 100px 1fr 1fr 75px;  */
 	grid-template-columns: 20% auto 15%;
 	background-color: black;
 }

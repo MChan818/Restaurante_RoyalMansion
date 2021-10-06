@@ -71,57 +71,56 @@
 
 /*PIE DE PAGINA*/
 .contacto_container {
-	background-color: #F2F2F2;
+	background-color: #111;
 	background-size: cover;
-	height: 12.5vh;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1vh;
+	height: 40vh;
+	width: 100%;
+	/* margin-top: 0.1vh; */
+	position: absolute;
 }
-
-.contacto-mail {
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
+.datos_container{
+	height: 30vh;
+	width: 20%;
+	margin-top: 5vh;
+	/* background-color: gray; */
+	float: left;
+	margin-left: 20vh;
+}
+.datos_container2{
+	height: 30vh;
+	width: 30%;
+	margin-top: 10vh;
+	/* background-color: lightblue; */
 	float: left;
 }
-
-.img-mail {
-	height: 7.5vh;
-	width: 7.5vh;
-	margin-left:40%;
-	margin-top: 2.5vh;
+.datos_container3{
+	height: 30vh;
+	width: 20%;
+	margin-top: 5vh;
+	/* background-color: lightcoral; */
 	float: left;
 }
-.contacto_mail_text{
-	margin-top:0.5vh;
-	white-space: pre;
+.copyright{
+	background-color: white;
+	margin-top: 40vh;
+	width: 100%;
 }
-.contacto-cel {
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	float: left;
+.copyright-txt{
+	text-align: center;
+	line-height: 7.5vh;
 }
-
-.img-cel {
-	height: 7.5vh;
-	width: 7.5vh;
-	margin-left:40%;
-	margin-top: 2.5vh;
-	float: left;
+/* MODIFICO EL BOTON */
+.btn {
+	width: 20vh;
 }
-
-.contacto_cel_text{
-	margin-top:0.5vh;
-	white-space: pre;
-}
-
-.social_media{
-	float: right;
+/* SACO LA SOMBRA DEL BOTON */
+.btn:focus {
+	outline: none;
+	box-shadow: none;
 }
 
 /*FIN DE PIE DE PAGINA*/
+/* NUEVO PIE DE PAGINA */
 
 /*FONDO PARA SUBPAGINAS*/
 .minifondo {

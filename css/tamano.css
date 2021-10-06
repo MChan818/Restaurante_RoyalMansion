@@ -1,4 +1,4 @@
-.my_modal-footer-txt, .my_modal-footer, .fuente_global, .subtitulo, .titulo {
+.contacto_text2, .contacto_text, .contacto_titulo, .my_modal-footer-txt, .my_modal-footer, .fuente_global, .subtitulo, .titulo {
   font-family: "Rajdhani", sans-serif;
 }
 
@@ -103,8 +103,25 @@
 }
 
 .img_media_size {
-  width: 50px;
-  height: 50px;
+  width: 4vh;
+  height: 4vh;
+}
+
+.contacto_titulo {
+  color: white;
+  margin-left: 10vh;
+}
+
+.contacto_text {
+  color: white;
+  font-size: 1.75vh;
+  margin-left: 10vh;
+}
+
+.contacto_text2 {
+  color: white;
+  font-size: 1.75vh;
+  margin-top: 3vh;
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px) {

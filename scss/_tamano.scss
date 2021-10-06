@@ -108,8 +108,28 @@
 }
 
 .img_media_size{
-    @include tamano(50px,50px);
+    @include tamano(4vh,4vh);
 }
+
+.contacto_titulo{
+	color: white;
+    margin-left: 10vh;
+	@extend %fuente;
+}
+
+.contacto_text{
+	color: white;
+    font-size: 1.75vh;
+    margin-left: 10vh;
+    @extend %fuente;
+}
+.contacto_text2{
+    color: white;
+    font-size: 1.75vh;
+    margin-top: 3vh;
+    @extend %fuente;
+}
+
 
 // PARA IPHONE6/7/8
 @media screen and (min-width: 300px)
